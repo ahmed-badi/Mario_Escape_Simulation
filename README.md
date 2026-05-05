@@ -181,8 +181,8 @@ If you use this code in your research, please cite:
 ```bibtex
 @misc{mario_escape_sim,
   title={Mario Escape Simulation: Reinforcement Learning in Grid-Based Pursuit-Evasion},
-  author={Your Name},
+  author={Ahmed Badi},
   year={2026},
-  url={https://github.com/yourusername/mario_escape_sim}
+  url={https://github.com/ahmed-badi/Mario_Escape_Simulation/}
 }
 ```
