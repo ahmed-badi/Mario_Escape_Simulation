@@ -76,6 +76,16 @@ Evaluate specific strategy:
 python src/simulation/engine.py --strategy dqn --episodes 1000
 ```
 
+### Interactive Dashboard
+
+Launch the real-time demo dashboard:
+
+```bash
+python app.py
+```
+
+Open the browser at the URL shown in the terminal.
+
 ### Generating ML Dataset
 
 Create trajectory dataset for supervised learning:

@@ -390,7 +390,7 @@ class DQNAgent:
         print(f"  💾 Agent sauvegardé → {path} (PER={self.use_per}, Dueling={self.dueling})")
 
     @classmethod
-    def load(cls, path: str, device: str = "auto") -> "DQNAgent":
+    def load(cls, path: str, device: str = "auto", silent: bool = False) -> "DQNAgent":
         checkpoint = torch.load(path, map_location="cpu", weights_only=False)
         
         # Retrieve architecture settings (default to enhanced versions)
@@ -409,7 +409,8 @@ class DQNAgent:
         agent.optimizer.load_state_dict(checkpoint["optimizer"])
         agent.eps = checkpoint["eps"]
         agent.total_steps = checkpoint["total_steps"]
-        print(f"  📂 Agent chargé ← {path} (steps={agent.total_steps}, PER={use_per}, Dueling={dueling})")
+        if not silent:
+            print(f"  📂 Agent chargé ← {path} (steps={agent.total_steps}, PER={use_per}, Dueling={dueling})")
         return agent
 
     def q_values(self, obs: np.ndarray) -> np.ndarray:
