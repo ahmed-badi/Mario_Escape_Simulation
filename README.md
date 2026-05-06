@@ -31,7 +31,7 @@ Evaluation & Analysis (Metrics, Comparisons, Datasets)
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/mario_escape_sim.git
+   git clone https://github.com/ahmed-badi/mario_escape_sim.git
    cd mario_escape_sim
    ```
 
